@@ -1,5 +1,5 @@
 <script lang="ts">
-	import profileImage from '../static/profile.jpg';
+	import profileImage from '../static/profile2.jpeg';
 	import '../styles/index';
 	import { fly, fade } from 'svelte/transition';
 </script>
@@ -146,14 +146,15 @@
 			justify-content: center;
 			img#profileImage {
 				border: 2px solid #000000;
-				max-width: 50vw;
-				max-height: 40vh;
+				width: 400px;
+				height: 400px;
+				object-fit: cover;
 				border-radius: 1vw;
 				margin: 1em;
 
 				@media screen and (max-width: 1024px) {
-					max-width: 60vw;
-					max-height: 40vh;
+					width: 50vw;
+					height: calc(50vw + 10vh);
 					border-radius: 2vw;
 				}
 			}
