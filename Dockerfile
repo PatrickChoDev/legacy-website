@@ -1,18 +1,18 @@
-FROM node:lts as build
-WORKDIR /app
-RUN npm config set unsafe-perm true
-COPY package.json .
-RUN npm install --no-audit
-COPY . .
-RUN npm run build
+FROM denoland/deno:alpine
 
-FROM node:lts-alpine as production
 WORKDIR /app
-RUN apk --no-cache add ca-certificates
-COPY --chown=node:node --from=build /app/package.json /app/package-lock.json ./
-COPY --chown=node:node --from=build /app/build/ .
-RUN npm install --only=production --no-audit
-ENV NODE_ENV=PRODUCTION
-USER node:node
-CMD [ "node", "index.js"]
+
+# Copy application files
+COPY . .
+
+# Install the SvelteKit dependencies
+RUN deno install
+
+# Build the SvelteKit application
+RUN deno task build
+
+# Expose the port your app runs on
 EXPOSE 3000
+
+# Command to run the application
+CMD ["deno", "run", "--allow-net", "--allow-read", "--allow-env", "build/index.js"]

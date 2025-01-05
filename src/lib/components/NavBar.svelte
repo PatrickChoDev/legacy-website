@@ -78,6 +78,7 @@
 			& a {
 				text-decoration: none;
 				padding: 1vh 1vw;
+				color: black;
 				&.active {
 					text-decoration: underline;
 					text-transform: uppercase;

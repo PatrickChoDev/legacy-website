@@ -2,6 +2,8 @@
 
 Welcome to my personal website repository! This is where I maintain the source code for my personal website.
 
+*This website will be deprecated soon, feels free to copy my codes. I'm building a new one :) but for apply some jobs I need this stupid template..*
+
 ## Overview
 
 This website serves as my digital portfolio and personal space on the internet, built with SvelteKit.
@@ -60,5 +62,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Thanapat Chotipun - devpatrick.cho@gmail.com
 
 Project Link: [https://github.com/PatrickChoDev/legacy-website](https://github.com/PatrickChoDev/legacy-website)
-
-*This website will be deprecated soon, feels free to copy my codes. I'm building a new one :) but for apply some jobs I need this stupid template..*
