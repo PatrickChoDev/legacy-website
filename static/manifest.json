@@ -1,0 +1,58 @@
+{
+	"short_name": "PatrickChoDev",
+	"name": "PatrickChoDev's Website",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "logo192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#aaaaaa",
+	"shortcuts": [
+		{
+			"name": "Technologies Stacks",
+			"short_name": "Stacks",
+			"description": "Language, Stacks, Tools, Framework, Collabroative Tools and anythings I use for development",
+			"url": "/stacks",
+			"icons": [
+				{
+					"src": "logo192.png",
+					"type": "image/png",
+					"sizes": "192x192"
+				}
+			]
+		},
+		{
+			"name": "Projects & Activities",
+			"short_name": "Activities",
+			"description": "Project, Works experience, Activities, Speaking and other I've done",
+			"url": "/activities",
+			"icons": [
+				{
+					"src": "logo192.png",
+					"type": "image/png",
+					"sizes": "192x192"
+				}
+			]
+		},
+		{
+			"name": "Blogs & Posts",
+			"short_name": "Blogs",
+			"description": "Take a rest and Read some posts here :)",
+			"url": "/blogs",
+			"icons": [
+				{
+					"src": "logo192.png",
+					"type": "image/png",
+					"sizes": "192x192"
+				}
+			]
+		}
+	],
+	"description": "Hey, I am Patrick, as known as PatrickChoDev. Sure!! This is my website."
+}
